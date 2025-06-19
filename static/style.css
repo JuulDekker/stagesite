@@ -1,8 +1,101 @@
+:root {
+    --sage: #b2c8b2;
+    --white: #ffffff;
+    --dark: #2e4632;
+}
+
 body {
-    background-color: #ffe4ec;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: var(--white);
+    color: var(--dark);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--sage);
+    padding: 1.5rem 1rem;
     text-align: center;
 }
-h1 {
-    color: #ff69b4;
+
+header h1 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid var(--sage);
+    border-radius: 4px;
+    width: 200px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background: var(--dark);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.company-card {
+    display: flex;
+    align-items: center;
+    background: var(--sage);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(46, 70, 50, 0.07);
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: var(--white);
+    margin-right: 1.5rem;
+}
+
+.info h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info li {
+    margin-bottom: 0.3rem;
+}
+
+@media (max-width: 600px) {
+    .company-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo img {
+        margin: 0 0 1rem 0;
+    }
+    main {
+        padding: 0 0.5rem;
+    }
 }
