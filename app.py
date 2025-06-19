@@ -5,20 +5,22 @@ app = Flask(__name__)
 companies = [
     {
         "name": "Flynth",
+        "type": "Afstudeerstage",
         "logo": "greentech.png",  # Place this image in static/logos/
         "pay": "€800/month",
         "period": "N.A.",
         "location": "Zierikzee",
-        "site: "
+        "site": ""
     },
     {
         "name": "Baker Tilly",
+        "type": "Afstudeerstage",
         "logo": "sageinnovations.png",
         "department": "Audit",
-        "pay": "€725/€850/month",
+        "pay": "€725-€850/month",
         "period": "N.A.",
         "location": "Goes",
-        "site": <a href="https://www.werkenbijbakertilly.nl/vacatures/afstudeerstage-audit-goes-2055684">Baker Tilly</a>,
+        "site": '<a href="https://www.werkenbijbakertilly.nl/vacatures/afstudeerstage-audit-goes-2055684">Baker Tilly</a>',
     },
     {
         "name": "GreenTech Solutions",
