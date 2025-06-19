@@ -99,3 +99,19 @@ main {
         padding: 0 0.5rem;
     }
 }
+
+.show-more-btn {
+    margin-top: 0.5rem;
+    background: var(--dark);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+}
+.more-info {
+    margin-top: 0.5rem;
+    background: #eaf4ea;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
