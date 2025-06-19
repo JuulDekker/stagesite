@@ -27,7 +27,20 @@
                             <li><strong>Pay:</strong> {{ company.pay }}</li>
                             <li><strong>Period:</strong> {{ company.period }}</li>
                             <li><strong>Location:</strong> {{ company.location }}</li>
+                            {% if company.site %}
+                                <li><strong>Site:</strong> <a href="{{ company.site }}" target="_blank">Visit</a></li>
+                            {% endif %}
                         </ul>
+                        <button class="show-more-btn" onclick="toggleMore(this)">Show more</button>
+                        <div class="more-info" style="display:none;">
+                            {% if company.type %}
+                                <p><strong>Type:</strong> {{ company.type }}</p>
+                            {% endif %}
+                            {% if company.department %}
+                                <p><strong>Department:</strong> {{ company.department }}</p>
+                            {% endif %}
+                            <!-- Add more fields as needed -->
+                        </div>
                     </div>
                 </div>
             {% endfor %}
@@ -35,5 +48,17 @@
             <p>No companies found.</p>
         {% endif %}
     </main>
+    <script>
+    function toggleMore(btn) {
+        const moreInfo = btn.nextElementSibling;
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+            btn.textContent = "Show less";
+        } else {
+            moreInfo.style.display = "none";
+            btn.textContent = "Show more";
+        }
+    }
+    </script>
 </body>
 </html>
