@@ -6,7 +6,7 @@ companies = [
     {
         "name": "Flynth",
         "type": "Afstudeerstage",
-        "logo": "greentech.png",  # Place this image in static/logos/
+        "logo": "",  # Place this image in static/logos/
         "pay": "€800/month",
         "period": "N.A.",
         "location": "Zierikzee",
