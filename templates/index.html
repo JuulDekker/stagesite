@@ -6,12 +6,6 @@
     <title>Internship Finder</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<script>
-function toggleFavorite(el) {
-    el.classList.toggle('favorited');
-    el.innerHTML = el.classList.contains('favorited') ? '❤' : '♡';
-}
-</script>
 <body>
     <header>
         <h1>Internship Finder</h1>
@@ -20,12 +14,14 @@ function toggleFavorite(el) {
             <button type="submit">Search</button>
         </form>
     </header>
+    <!-- ABOUT SECTION START -->
     <section class="about">
-    <h2>About Internship Finder</h2>
-    <p>
-        Welcome to Internship Finder! Here you can search for internships and companies, view details, and mark your favourites. Click the heart to save your favourite internships.
-    </p>
+        <h2>About Internship Finder</h2>
+        <p>
+            Welcome to Internship Finder! Here you can search for internships and companies, view details, and mark your favourites. Click the heart to save your favourite internships.
+        </p>
     </section>
+    <!-- ABOUT SECTION END -->
     <main>
         {% if companies %}
             {% for company in companies %}
@@ -36,7 +32,8 @@ function toggleFavorite(el) {
                     <div class="info">
                         <h2>
                             <span class="favorite" onclick="toggleFavorite(this)">&#9825;</span>
-                            {{ company.name }}</h2>
+                            {{ company.name }}
+                        </h2>
                         <ul>
                             <li><strong>Pay:</strong> {{ company.pay }}</li>
                             <li><strong>Period:</strong> {{ company.period }}</li>
@@ -72,6 +69,10 @@ function toggleFavorite(el) {
             moreInfo.style.display = "none";
             btn.textContent = "Show more";
         }
+    }
+    function toggleFavorite(el) {
+        el.classList.toggle('favorited');
+        el.innerHTML = el.classList.contains('favorited') ? '❤' : '♡';
     }
     </script>
 </body>
