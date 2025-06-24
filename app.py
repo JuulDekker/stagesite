@@ -6,11 +6,12 @@ companies = [
     {
         "name": "Flynth",
         "type": "Afstudeerstage",
-        "logo": "abc.png",  # Place this image in static/logos/
+        "logo": "abc.png",
         "pay": "€800/month",
         "period": "N.A.",
         "location": "Zierikzee",
-        "site": ""
+        "site": "",
+        "department": ""
     },
     {
         "name": "Baker Tilly",
@@ -20,30 +21,39 @@ companies = [
         "pay": "€725-€850/month",
         "period": "N.A.",
         "location": "Goes",
-        "site": "https://www.werkenbijbakertilly.nl/vacatures/afstudeerstage-audit-goes-2055684",
+        "site": "https://www.werkenbijbakertilly.nl/vacatures/afstudeerstage-audit-goes-2055684"
     },
     {
         "name": "GreenTech Solutions",
-        "logo": "greentech.png",  # Place this image in static/logos/
+        "type": "",
+        "logo": "greentech.png",
         "pay": "€500/month",
         "period": "Feb 2026 - Jul 2026",
-        "location": "Amsterdam"
+        "location": "Amsterdam",
+        "site": "",
+        "department": ""
     },
     {
         "name": "Sage Innovations",
+        "type": "",
         "logo": "sageinnovations.png",
         "pay": "€400/month",
         "period": "Jan 2026 - Jun 2026",
-        "location": "Rotterdam"
+        "location": "Rotterdam",
+        "site": "",
+        "department": ""
     },
     {
         "name": "TechWave",
+        "type": "",
         "logo": "techwave.png",
         "pay": "€600/month",
         "period": "Mar 2026 - Aug 2026",
-        "location": "Utrecht"
+        "location": "Utrecht",
+        "site": "",
+        "department": ""
     },
-    # It is very easy to add more companies if needed, copy the code above and change the information.
+     # It is very easy to add more companies if needed, copy the code above and change the information.
 ]
 
 @app.route("/", methods=["GET"])
