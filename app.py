@@ -53,7 +53,7 @@ companies = [
         "site": "",
         "department": ""
     },
-     # It is very easy to add more companies if needed, copy the code above and change the information.
+    # It is very easy to add more companies if needed, copy the code above and change the information.
 ]
 
 @app.route("/", methods=["GET"])
