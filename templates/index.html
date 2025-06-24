@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Finder</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -18,7 +19,7 @@
     <section class="about">
         <h2>About Internship Finder</h2>
         <p>
-            Welcome to Internship Finder! Here you can search for internships and companies, view details, and mark your favourites. Click the heart to save your favourite internships.
+            Welcome to Internship Finder! This is a place for Finance & Control students to search for potential internships! I have worked on a project, with my own school, that allows students to find companies that offer internships. However, the information about these interships made the school site very slow, I thought it would be a fun challenge to create my own site for this, hence the site Internship Finder!
         </p>
     </section>
     <!-- ABOUT SECTION END -->
@@ -38,8 +39,8 @@
                             <li><strong>Pay:</strong> {{ company.pay }}</li>
                             <li><strong>Period:</strong> {{ company.period }}</li>
                             <li><strong>Location:</strong> {{ company.location }}</li>
-                            {% if company.site %}
-                                <li><strong>Site:</strong> <a href="{{ company.site }}" target="_blank">Visit</a></li>
+                            {% if company.site %}{% if company.site %}
+                            <li><strong>Site:</strong> <a href="{{ company.site }}" target="_blank">Visit</a></li>
                             {% endif %}
                         </ul>
                         <button class="show-more-btn" onclick="toggleMore(this)">Show more</button>
@@ -69,11 +70,6 @@
             moreInfo.style.display = "none";
             btn.textContent = "Show more";
         }
-    }
-    function toggleFavorite(el) {
-        el.classList.toggle('favorited');
-        el.innerHTML = el.classList.contains('favorited') ? '❤' : '♡';
-    }
     </script>
 </body>
 </html>

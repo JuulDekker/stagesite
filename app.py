@@ -6,7 +6,7 @@ companies = [
     {
         "name": "Flynth",
         "type": "Afstudeerstage",
-        "logo": "",  # Place this image in static/logos/
+        "logo": "abc.png",  # Place this image in static/logos/
         "pay": "€800/month",
         "period": "N.A.",
         "location": "Zierikzee",
@@ -20,7 +20,7 @@ companies = [
         "pay": "€725-€850/month",
         "period": "N.A.",
         "location": "Goes",
-        "site": '<a href="https://www.werkenbijbakertilly.nl/vacatures/afstudeerstage-audit-goes-2055684">Baker Tilly</a>',
+        "site": "https://www.werkenbijbakertilly.nl/vacatures/afstudeerstage-audit-goes-2055684",
     },
     {
         "name": "GreenTech Solutions",
@@ -43,21 +43,7 @@ companies = [
         "period": "Mar 2026 - Aug 2026",
         "location": "Utrecht"
     },
-    {
-        "name": "EcoBuild Corp",
-        "logo": "ecobuild.png",
-        "pay": "€550/month",
-        "period": "Apr 2026 - Sep 2026",
-        "location": "The Hague"
-    },
-    {
-        "name": "DataSphere Analytics",
-        "logo": "datasphere.png",
-        "pay": "€700/month",
-        "period": "May 2026 - Oct 2026",
-        "location": "Eindhoven"
-    },
-    # Add more companies as needed
+    # It is very easy to add more companies if needed, copy the code above and change the information.
 ]
 
 @app.route("/", methods=["GET"])
