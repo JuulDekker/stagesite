@@ -6,52 +6,42 @@ companies = [
     {
         "name": "Flynth",
         "type": "Afstudeerstage",
-        "logo": "abc.png",
+        "logo": "flynth.jpg",
         "pay": "€800/month",
-        "period": "N.A.",
+        "period": "Insufficient information",
         "location": "Zierikzee",
         "site": "",
-        "department": ""
+        "department": "Insufficient information"
     },
     {
         "name": "Baker Tilly",
         "type": "Afstudeerstage",
-        "logo": "sageinnovations.png",
+        "logo": "bakertilly.jpg",
         "department": "Audit",
         "pay": "€725-€850/month",
-        "period": "N.A.",
+        "period": "Insufficient information",
         "location": "Goes",
         "site": "https://www.werkenbijbakertilly.nl/vacatures/afstudeerstage-audit-goes-2055684"
     },
     {
-        "name": "GreenTech Solutions",
-        "type": "",
-        "logo": "greentech.png",
-        "pay": "€500/month",
-        "period": "Feb 2026 - Jul 2026",
-        "location": "Amsterdam",
-        "site": "",
-        "department": ""
+        "name": "Schipper Accountants",
+        "type": "Insufficient information",
+        "logo": "schipper.jpg",
+        "pay": "Insufficient information",
+        "period": "Insufficient information",
+        "location": "Zeeland",
+        "site": "https://www.schipperaccountants.nl/werken-bij/vacature/stage-sollicitatie/",
+        "department": "Accountancy, Audit or Tax"
     },
     {
-        "name": "Sage Innovations",
-        "type": "",
-        "logo": "sageinnovations.png",
-        "pay": "€400/month",
-        "period": "Jan 2026 - Jun 2026",
-        "location": "Rotterdam",
-        "site": "",
-        "department": ""
-    },
-    {
-        "name": "TechWave",
-        "type": "",
-        "logo": "techwave.png",
-        "pay": "€600/month",
-        "period": "Mar 2026 - Aug 2026",
-        "location": "Utrecht",
-        "site": "",
-        "department": ""
+        "name": "WEA Accountants, Adviseurs",
+        "type": "Insufficient information",
+        "logo": "wea.jpg",
+        "pay": "Insufficient information",
+        "period": "Insufficient information",
+        "location": "Hulst, Middelburg, Oost-Souburg, Vlissingen",
+        "site": "https://werkenbij.wea.nl/vacature/vacature-stagiair-hbo-aa-be-en-fc-wea-zeeland/",
+        "department": "Insufficient information"
     },
     # It is very easy to add more companies if needed, copy the code above and change the information.
 ]
